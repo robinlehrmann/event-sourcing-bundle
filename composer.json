@@ -19,7 +19,7 @@
   ],
   "require": {
     "php": "~8.0.0|~8.1.0",
-    "patchlevel/event-sourcing": "^1.1.0",
+    "patchlevel/event-sourcing": "dev-batch-snapshot",
     "symfony/dependency-injection": "^4.4.34|^5.4.0|^6.0.0",
     "symfony/http-kernel": "^4.4.34|^5.4.0|^6.0.0",
     "symfony/config": "^4.4.34|^5.4.0|^6.0.0",
@@ -52,7 +52,12 @@
     "preferred-install": {
       "*": "dist"
     },
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true,
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "infection/extension-installer": true
+    }
   },
   "autoload": {
     "psr-4": {
